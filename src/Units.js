@@ -3,7 +3,7 @@ import "./Units.css";
 
 export default function Units() {
   return (
-    <div className="row">
+    <div className="Units row">
       <div className="col">
         <a href="/" id="celsius-link">
           °C

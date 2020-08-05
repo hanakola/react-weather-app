@@ -4,6 +4,7 @@ import City from "./City";
 import DayTime from "./DayTime";
 import WeatherDescription from "./WeatherDescription";
 import CurrentTemperature from "./CurrentTemperature";
+import IconAndDetails from "./IconAndDetails";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ export default function App() {
         <DayTime />
         <WeatherDescription />
         <CurrentTemperature />
+        <IconAndDetails />
       </div>
     </div>
   );

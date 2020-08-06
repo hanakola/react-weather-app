@@ -19,6 +19,18 @@ export default function App() {
         <CurrentTemperature />
         <IconAndDetails />
       </div>
+      <div className="footer">
+        <small>
+          <a
+            href="https://github.com/hanakola/react-weather-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open-source code on GitHub
+          </a>{" "}
+          by Hana Kolackova
+        </small>
+      </div>
     </div>
   );
 }

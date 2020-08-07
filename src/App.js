@@ -5,6 +5,7 @@ import DayTime from "./DayTime";
 import WeatherDescription from "./WeatherDescription";
 import CurrentTemperature from "./CurrentTemperature";
 import IconAndDetails from "./IconAndDetails";
+import Search from "./Search";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ export default function App() {
         <WeatherDescription />
         <CurrentTemperature />
         <IconAndDetails />
+        <Search />
       </div>
       <div className="footer">
         <small>

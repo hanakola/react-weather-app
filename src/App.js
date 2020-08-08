@@ -6,6 +6,7 @@ import WeatherDescription from "./WeatherDescription";
 import CurrentTemperature from "./CurrentTemperature";
 import IconAndDetails from "./IconAndDetails";
 import Search from "./Search";
+import Forecast from "./Forecast";
 
 import "./App.css";
 
@@ -13,13 +14,21 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Units />
-        <City />
-        <DayTime />
-        <WeatherDescription />
-        <CurrentTemperature />
-        <IconAndDetails />
-        <Search />
+        <div className="CurrentWeather">
+          <Units />
+          <City />
+          <DayTime />
+          <WeatherDescription />
+          <CurrentTemperature />
+          <IconAndDetails />
+          <Search />
+        </div>
+        <div className="Forecast">
+          <Forecast day="WED" temp={20} />
+          <Forecast day="THU" temp={22} />
+          <Forecast day="FRI" temp={19} />
+          <Forecast day="SAT" temp={17} />
+        </div>
       </div>
       <div className="footer">
         <small>

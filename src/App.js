@@ -1,11 +1,5 @@
 import React from "react";
-import Units from "./Units";
-import City from "./City";
-import DayTime from "./DayTime";
-import WeatherDescription from "./WeatherDescription";
-import CurrentTemperature from "./CurrentTemperature";
-import IconAndDetails from "./IconAndDetails";
-import Search from "./Search";
+import CurrentWeather from "./CurrentWeather";
 import Forecast from "./Forecast";
 
 import "./App.css";
@@ -14,15 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="CurrentWeather">
-          <Units />
-          <City />
-          <DayTime />
-          <WeatherDescription />
-          <CurrentTemperature />
-          <IconAndDetails />
-          <Search />
-        </div>
+        <CurrentWeather />
         <div className="Forecast">
           <Forecast day="WED" temp={20} />
           <Forecast day="THU" temp={22} />

@@ -24,7 +24,7 @@ export default function DayTime(props) {
   return (
     <div className="DayTime row">
       <div className="col">
-        `{day} {hours}:{minutes}`
+        {day}, {hours}:{minutes}
       </div>
     </div>
   );

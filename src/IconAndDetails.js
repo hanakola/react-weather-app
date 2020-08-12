@@ -3,7 +3,7 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 import "./IconAndDetails.css";
 
-export default function IconAndDetails() {
+export default function IconAndDetails(props) {
   return (
     <div className="IconAndDetails row">
       <div className="col-2"></div>
@@ -16,9 +16,11 @@ export default function IconAndDetails() {
         />
       </div>
       <div className="col-6 WeatherDetails">
-        Humidity: 70%
+        Feels like: {Math.round(props.feelsLike)}°
         <br />
-        Wind: 10 km/h
+        Humidity: {props.humidity}%
+        <br />
+        Wind: {Math.round(props.wind * 3.6)} km/h
       </div>
     </div>
   );

@@ -1,0 +1,18 @@
+.SearchEngine form {
+  margin: 10px;
+}
+
+.SearchEngine .search-city,
+.search-button,
+.location-button {
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.SearchEngine .search-button,
+.location-button {
+  color: #212529;
+  background: white;
+  width: 40px;
+}

@@ -19,6 +19,7 @@ export default function CurrentWeather(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -50,6 +51,7 @@ export default function CurrentWeather(props) {
         <WeatherDescription description={weatherData.description} />
         <CurrentTemperature temperature={weatherData.temperature} />
         <IconAndDetails
+          icon={weatherData.icon}
           feelsLike={weatherData.feelsLike}
           humidity={weatherData.humidity}
           wind={weatherData.wind}

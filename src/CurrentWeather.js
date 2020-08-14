@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Units from "./Units";
 import City from "./City";
 import DayTime from "./DayTime";
 import WeatherDescription from "./WeatherDescription";
@@ -45,11 +44,10 @@ export default function CurrentWeather(props) {
   if (weatherData.ready) {
     return (
       <div className="CurrentWeather">
-        <Units />
         <City city={weatherData.city} />
         <DayTime date={weatherData.date} />
         <WeatherDescription description={weatherData.description} />
-        <CurrentTemperature temperature={weatherData.temperature} />
+        <CurrentTemperature celsius={weatherData.temperature} />
         <IconAndDetails
           icon={weatherData.icon}
           feelsLike={weatherData.feelsLike}

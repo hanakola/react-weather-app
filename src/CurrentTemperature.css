@@ -1,3 +1,15 @@
-.CurrentTemperature {
+.CurrentTemperature h2 {
   padding: 15px;
+  font-size: 40px;
+}
+.current-temperature,
+.units {
+  display: inline-block;
+}
+.units {
+  position: relative;
+  top: -18px;
+}
+.units a {
+  color: black;
 }

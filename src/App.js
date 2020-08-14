@@ -1,6 +1,5 @@
 import React from "react";
-import CurrentWeather from "./CurrentWeather";
-import Forecast from "./Forecast";
+import Weather from "./Weather";
 
 import "./App.css";
 
@@ -8,13 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <CurrentWeather defaultCity="Edinburgh" />
-        <div className="Forecast">
-          <Forecast day="WED" temp={20} />
-          <Forecast day="THU" temp={22} />
-          <Forecast day="FRI" temp={19} />
-          <Forecast day="SAT" temp={17} />
-        </div>
+        <Weather defaultCity="Edinburgh" />
       </div>
       <div className="footer">
         <small>

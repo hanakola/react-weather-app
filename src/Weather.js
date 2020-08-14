@@ -5,10 +5,11 @@ import DayTime from "./DayTime";
 import WeatherDescription from "./WeatherDescription";
 import CurrentTemperature from "./CurrentTemperature";
 import IconAndDetails from "./IconAndDetails";
+import Forecast from "./Forecast";
 
 import "./SearchEngine.css";
 
-export default function CurrentWeather(props) {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
@@ -43,7 +44,7 @@ export default function CurrentWeather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="CurrentWeather">
+      <div className="Weather">
         <City city={weatherData.city} />
         <DayTime date={weatherData.date} />
         <WeatherDescription description={weatherData.description} />
@@ -74,6 +75,7 @@ export default function CurrentWeather(props) {
             </form>
           </div>
         </div>
+        <Forecast />
       </div>
     );
   } else {

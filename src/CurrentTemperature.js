@@ -21,13 +21,13 @@ export default function CurrentTemperature(props) {
       <div className="CurrentTemperature row">
         <div className="col">
           <span className="current-temperature">
-            <h2>{Math.round(props.celsius)}°</h2>
+            {Math.round(props.celsius)}°
           </span>
           <span className="units">
-            °C |{" "}
-            <a href="/" id="fahrenheit-link" onClick={convertToFahrenheit}>
-              °F
-            </a>
+            <span className="shown-unit-c">C</span>
+            <button className="fahrenheit-button" onClick={convertToFahrenheit}>
+              F
+            </button>
           </span>
         </div>
       </div>
@@ -37,14 +37,14 @@ export default function CurrentTemperature(props) {
       <div className="CurrentTemperature row">
         <div className="col">
           <span className="current-temperature">
-            <h2>{Math.round(fahrenheit())}°</h2>
+            {Math.round(fahrenheit())}°
           </span>
           <span className="units">
-            <a href="/" id="celsius-link" onClick={convertToCelsius}>
-              °C
-            </a>{" "}
-            | °F
+            <span className="shown-unit-f">F</span>
           </span>
+          <button className="celsius-button" onClick={convertToCelsius}>
+            C
+          </button>
         </div>
       </div>
     );

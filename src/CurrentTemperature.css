@@ -1,15 +1,30 @@
-.CurrentTemperature h2 {
-  padding: 15px;
+.current-temperature {
+  padding: 15px 5px;
   font-size: 40px;
 }
 .current-temperature,
 .units {
   display: inline-block;
 }
-.units {
+.celsius-button,
+.fahrenheit-button {
+  color: #212529;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px grey;
+  transition: all 100ms ease-in-out;
+  width: 40px;
+  margin: 10px;
+  font-size: 16px;
   position: relative;
-  top: -18px;
+  top: -7px;
 }
-.units a {
-  color: black;
+.celsius-button:hover,
+.fahrenheit-button:hover {
+  background: white;
+}
+.shown-unit-c,
+.shown-unit-f {
+  font-size: 40px;
 }

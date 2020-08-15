@@ -1,3 +1,8 @@
 .IconAndDetails {
   padding: 5px;
 }
+.CurrentIcon,
+.WeatherDetails {
+  display: inline-block;
+  margin: 0 auto;
+}

@@ -6,6 +6,7 @@ import WeatherDescription from "./WeatherDescription";
 import CurrentTemperature from "./CurrentTemperature";
 import IconAndDetails from "./IconAndDetails";
 import Forecast from "./Forecast";
+import Loading from "./Loading";
 
 import "./SearchEngine.css";
 
@@ -75,12 +76,12 @@ export default function Weather(props) {
             </form>
           </div>
         </div>
-        <Forecast />
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {
     search();
 
-    return `Loading...`;
+    return <Loading />;
   }
 }

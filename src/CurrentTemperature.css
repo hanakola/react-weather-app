@@ -10,7 +10,7 @@
 .fahrenheit-button {
   color: #212529;
   background: transparent;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   box-shadow: 1px 1px 4px grey;
   transition: all 100ms ease-in-out;

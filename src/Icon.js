@@ -26,12 +26,11 @@ export default function IconAndDetails(props) {
   };
   return (
     <div>
-      <div className="col-2"></div>
-      <div className="col-4 CurrentIcon">
+      <div className="Icon">
         <ReactAnimatedWeather
           icon={codeMapping[props.icon]}
           color="#212529"
-          size={70}
+          size={55}
           animate={true}
         />
       </div>

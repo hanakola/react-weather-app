@@ -6,8 +6,11 @@ import "./IconAndDetails.css";
 export default function IconAndDetails(props) {
   return (
     <div className="IconAndDetails row">
-      <Icon icon={props.icon} />
-      <div className="col-6 WeatherDetails">
+      <div className="col-2"></div>
+      <div className="col-3">
+        <Icon icon={props.icon} />
+      </div>
+      <div className="col-7 WeatherDetails">
         Feels like: {Math.round(props.feelsLike)}°
         <br />
         Humidity: {props.humidity}%

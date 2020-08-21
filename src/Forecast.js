@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Icon from "./Icon";
+import ForecastItem from "./ForecastItem";
 
 import "./Forecast.css";
 
@@ -17,43 +17,15 @@ export default function Forecast(props) {
     return (
       <div className="Forecast">
         <div className="row">
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[0].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[0].weather[0].icon} />
-            {Math.round(forecast.list[0].main.temp)}°
-          </div>
-
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[1].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[1].weather[0].icon} />
-            {Math.round(forecast.list[1].main.temp)}°
-          </div>
-
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[2].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[2].weather[0].icon} />
-            {Math.round(forecast.list[2].main.temp)}°
-          </div>
+          <ForecastItem data={forecast.list[0]} />
+          <ForecastItem data={forecast.list[1]} />
+          <ForecastItem data={forecast.list[2]} />
         </div>
         <br />
         <div className="row">
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[3].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[3].weather[0].icon} />
-            {Math.round(forecast.list[3].main.temp)}°
-          </div>
-
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[4].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[4].weather[0].icon} />
-            {Math.round(forecast.list[4].main.temp)}°
-          </div>
-
-          <div className="col-4 forecast-item">
-            {new Date(forecast.list[5].dt * 1000).getHours()}:00
-            <Icon icon={forecast.list[5].weather[0].icon} />
-            {Math.round(forecast.list[5].main.temp)}°
-          </div>
+          <ForecastItem data={forecast.list[3]} />
+          <ForecastItem data={forecast.list[4]} />
+          <ForecastItem data={forecast.list[5]} />
         </div>
       </div>
     );

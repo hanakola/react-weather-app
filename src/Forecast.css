@@ -1,13 +1,13 @@
 .Forecast {
   margin: 10px;
 }
-.Forecast .forecast-item {
+.Forecast .ForecastItem {
   margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 10px;
   background: transparent;
   transition: all 200ms ease-in-out;
 }
-.forecast-item:hover {
+.ForecastItem:hover {
   background: #7dc8f7;
 }
